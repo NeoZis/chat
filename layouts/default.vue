@@ -3,7 +3,7 @@
     <header>
       <div style="display: flex">
         <input type="button" class="btn btn-primary" v-show="showChat" value="Назад" @click="backToDialogs">
-        <h2>Hello {{user.login}}!</h2>
+        <h2>Hello {{user.login ? user.login : 'Guest'}}!</h2>
       </div>
       <input type="button" class="btn btn-danger" v-show="registered" value="Выйти" @click="isLogOut">
     </header>
